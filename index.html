@@ -2,16 +2,14 @@
 <html>
 <head>
     <script>
-        function redirect() {
+        if (navigator.userAgent.includes("Instagram")) {
+            window.location.href = "data:application/octet-stream;base64,SGVsbG8gV29ybGQ="; // Dummy file
+        } else {
             window.location.href = "https://devlabs.gg";
         }
     </script>
 </head>
 <body>
-    <a href="https://devlabs.gg" id="link" style="display:none;"></a>
-    <p>Redirecting to devlabs.gg...</p>
-    <script>
-        document.getElementById("link").click();
-    </script>
+    <p>Redirecting...</p>
 </body>
 </html>
