@@ -2,10 +2,16 @@
 <html>
 <head>
     <script>
-        window.open("https://devlabs.gg", "_blank");
+        function redirect() {
+            window.location.href = "https://devlabs.gg";
+        }
     </script>
 </head>
 <body>
+    <a href="https://devlabs.gg" id="link" style="display:none;"></a>
     <p>Redirecting to devlabs.gg...</p>
+    <script>
+        document.getElementById("link").click();
+    </script>
 </body>
 </html>
